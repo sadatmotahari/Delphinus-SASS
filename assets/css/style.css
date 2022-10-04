@@ -1,0 +1,268 @@
+@import "reset.css";
+@import "fontawesome.css";
+@import "all.css";
+
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+.container-full {
+    width: 100%;
+    padding: 0 40px;
+}
+
+.container-content {
+    width: 1100px;
+    margin: 0 auto;
+}
+*{
+    box-sizing: border-box;
+}
+.top-header{
+    border-bottom: 1px solid #f6f6f6;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.header ul{
+    text-transform: uppercase;
+}
+.header ul li{
+    display: inline-block;
+    margin: 0 10px;
+    border-left: 1px solid #f6f6f6;
+}
+.header ul li a{
+    color: #000;
+    opacity: 50%;
+    transition: all .5s;
+    line-height: 47px;
+    margin: 5px;
+}
+.header ul li a:hover{
+    opacity: 100%;
+}
+.bottom-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+    text-transform: uppercase;
+}
+.bottom-header .menu ul li{
+    display: inline-block;
+    margin: 0 15px;
+}
+.bottom-header .menu ul li a{
+    color: #000;
+    opacity: 50%;
+    transition: all .5s;
+}
+.bottom-header .menu ul li i{
+    font-size: 10px;
+    margin-left: 5px;
+}
+.bottom-header .menu ul li a:hover{
+    opacity: 100%;
+}
+.hero{
+    position: relative;
+}
+.hero::after{
+    content: "";
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    background: #f6f6f6;
+    top: 0;
+    left: 0;   
+}
+.hero-slider{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-pictures{
+    position: relative;
+    z-index: 10;
+}
+.hero-pictures img{
+    width: 330px;
+}
+.hero-pictures .hero-price{
+    text-align: center;
+    line-height: .5;
+}
+.hero-pictures .hero-price span{
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1;
+    text-transform: uppercase;
+}
+.hero-pictures .hero-price p{
+    color: #999;
+}
+.hero-pictures .hero-price i{
+    font-size: 10px;
+    color: #999;
+}
+.rooms img{
+    width: 33%;
+}
+.rooms {
+    display: flex;
+    margin-top: 100px;
+    position: relative;
+}
+.rooms::after{
+    content: "";
+    position: absolute;
+    background: rgba(0, 0, 0, 0.301);
+    inset: 0;
+}
+.rooms .left-room{
+    background: url(../images/collection_carousel_background_1.jpg);
+    background-size: cover;
+    height: 56vh;
+    width: 33%;
+    position: relative;
+}
+.rooms .center-room{
+    background: url(../images/collection_carousel_background_2.jpg);
+    background-size: cover;
+    height: 56vh;
+    width: 33%;
+    position: relative;
+}
+.rooms .right-room{
+    background: url(../images/collection_carousel_background_3.jpg);
+    background-size: cover;
+    height: 56vh;
+    width: 33%;
+    position: relative;
+}
+.description{
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    color: #f6f6f6;
+    z-index: 3;
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: 1.5;
+}
+
+.shop-now{
+    background: none;
+    color: #f6f6f6;
+    border-color: #fff;
+    padding: 10px 30px;
+    letter-spacing: 1.5;
+}
+.wave{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.5;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+.wave span{
+    letter-spacing: 2;
+    font-size: 17px;
+    font-weight: 600;
+}
+.wave i{
+    margin: 10px 0;
+    font-size: 17px;
+}
+.wave a{
+    color: #000;
+    opacity: 50%;
+    transition: all .5s;
+    font-size:13px ;
+}
+.wave a:hover{
+    opacity: 100%;
+}
+.gallery{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.gallery img{
+    width: 150px;
+}
+.price{
+    width: 200px;
+    margin:20px 0 0 10px;
+}
+.price i{
+    font-size: 10px;
+    color: #c6c6c6;
+}
+.gallery img{
+    margin:20px 0;
+}
+.arrival{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.arrival img{
+    width:25% ;
+}
+.delphinus{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-us .container-content .delphinus .left-del{
+    background: url(../images/about_us_newsletter_about_background.webp);
+    background-size: cover;
+    width: 730px;
+    height: 318px;
+    background-position: center 550px;
+    color: #fff;
+}
+.about-us .container-content .delphinus .right-del{
+    width: 360px;
+    text-align: center;
+    line-height:2;
+    border: 1px solid #000;
+    position: relative;
+}
+
+.about-us .container-content .delphinus .right-del .text{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+}
+.about-us .container-content .three img{
+    width: 360px;
+}
+.about-us .container-content .three{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.flex-logos {
+    display: flex;
+    justify-content: space-between;
+    margin: 60px 0;
+}
+.free
+{
+    background-color: #f6f6f6;
+    display: flex;
+    padding: 85px 0 60px 0;
+    justify-content: space-between;
+}
